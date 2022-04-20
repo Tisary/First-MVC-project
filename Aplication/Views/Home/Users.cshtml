@@ -1,0 +1,22 @@
+@model Aplication.Models.User
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RsvpForm</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <form asp-action="RsvpForm" method="post" class="center">
+        <p>
+            <label asp-for="Name">Your name:</label>
+            <input asp-for="Name" />
+        </p>
+        <button type="submit">Join</button>
+    </form>
+</body>
+</html>
